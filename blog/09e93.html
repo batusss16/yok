@@ -1,0 +1,1534 @@
+                <!DOCTYPE html>
+<html class="h-full" lang="sv">
+
+<!-- Mirrored from turkeyx.net/blog/0?lang=sv by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2024 14:09:13 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Fırat KAYA">
+<link rel="shortcut icon" type="image/x-icon" href="../apps/main/public/assets/img/extras/favicon1341.png?cache=1713544734">
+
+
+<title>TurkeyX - Her zaman en iyisi için!</title>
+
+<meta name="description" content="" />
+<meta name="keywords" content="turkeyx,minecraft,survival,skyblock,hub,txsunucu,turkey x">
+<link rel="canonical" href="../index.html" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="TurkeyX - Her zaman en iyisi için!" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="../index.html" />
+<meta property="og:site_name" content="TurkeyX" />
+
+<!-- MAIN -->
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- EXTRAS -->
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.css">
+<link rel="stylesheet" href="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css">
+<script src="https://cdn.tailwindcss.com/"></script>
+<link href="../../cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" />
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'gold': {
+              '50': '#ffffe7',
+              '100': '#feffc1',
+              '200': '#fffd86',
+              '300': '#fff341',
+              '400': '#ffe40d',
+              '500': '#ffd500',
+              '600': '#d19c00',
+              '700': '#a67002',
+              '800': '#89570a',
+              '900': '#74470f',
+              '950': '#442504',
+          },
+          'golden-tainoi': {
+              '50': '#fff9eb',
+              '100': '#ffedc6',
+              '200': '#ffd06b',
+              '300': '#ffc04a',
+              '400': '#ffa720',
+              '500': '#f98307',
+              '600': '#dd5d02',
+              '700': '#b73e06',
+              '800': '#942f0c',
+              '900': '#7a270d',
+              '950': '#461202',
+          },
+          'redo': {
+              '50': '#fefbe8',
+              '100': '#fff7c2',
+              '200': '#ffea89',
+              '300': '#ffd22e',
+              '400': '#fdc112',
+              '500': '#eca706',
+              '600': '#cc8002',
+              '700': '#a35905',
+              '800': '#86460d',
+              '900': '#723a11',
+              '950': '#431d05',
+          },
+          'redogr': {
+            '900': "#0d0e0f",
+          }
+        }
+      }
+    }
+  }
+</script>
+
+<!-- FONTS -->
+<link rel="stylesheet" type="text/css" href="../../use.fontawesome.com/releases/v5.3.1/css/all.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" href="../apps/main/themes/redoerdorealms/public/assets/css/main.min7b1b.css?v=558">
+<link rel="stylesheet" type="text/css" href="../apps/main/themes/redoerdorealms/public/assets/css/responsive.min7b1b.css?v=558">
+
+
+<style type="text/css">
+  body {
+    font-family: 'Poppins', sans-serif;
+  }
+  .card {
+      background: #1c1917;
+      color: white;
+  }
+  .card-header:first-child {
+      font-size: 1.05rem;
+      line-height: 1.75rem;
+      font-style: italic;
+      text-transform: uppercase;
+      color: rgb(254 252 232 / 0.2);
+      background: #1c1917;
+      font-weight: bold;
+  }
+  td img.rounded-circle {
+      margin: auto;
+  }
+  .table thead th {
+      color: #ffe085;
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+      color: #ffe085 !important;
+      border-color: #ffe085 !important;
+      background: #141210 !important;
+  }
+  .nav-tabs .nav-link:hover {
+      color: #ffe085 !important;
+      border-color: #ffe085 !important;
+      background: #141210 !important;
+  }
+  .btn-success {
+      background: #2b9b58 !important;
+      font-weight: bold;
+      border: none;
+  }
+  .col-form-label {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-style: italic;
+  }
+  .btn-rounded {
+      border-radius: 10px !important;
+  }
+  .credit-icon::before {
+    content: ' ';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url(../apps/main/public/assets/img/extras/credit.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1rem;
+  }
+  .breadcrumb {
+      background: #141210;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 0.375rem !important;
+  }
+
+  .breadcrumb a {
+      color: #635959 !important;
+  }
+
+  li.breadcrumb-item.active {
+      color: #4f4d4c !important;
+  }
+
+  .breadcrumb-item+.breadcrumb-item::before {
+      color: #4f4d4c !important;
+  }
+  .pagination .page-item .page-link {
+    background: #0c0a09;
+    border: none;
+    border-radius: 10px;
+    color: white;
+  }
+  .pagination .page-item.active .page-link, .pagination .page-item.active .page-link:hover {
+      background: #fdc112;
+      color: #74470f;
+      font-weight: bold;
+  }
+  .pagination .page-item .page-link:hover {
+      color: #838383;
+      background-color: #231f1f;
+      border-color: #dee2e6;
+  }
+  :root {
+    --ck-color-base-foreground: rgb(4 3 3) !important;
+    --ck-color-base-background: rgb(12 10 9) !important;
+    --ck-color-base-border: rgb(12 10 9) !important;
+    --ck-color-text: hsl(0deg 0.87% 40.4%) !important;
+    --ck-border-radius: 0.375rem !important;
+    --ck-color-focus-border: rgb(12 10 9) !important;
+    --ck-custom-white: white !important;
+    }
+    .ck.ck-reset.ck-editor.ck-rounded-corners {
+      color:rgb(231 229 228) !important;
+    }
+    .alert {
+        border-radius: 0.375rem !important;
+        overflow: hidden;
+        padding: 10px !important;
+        font-weight: bold;
+        margin-bottom: 20px !important;
+    }
+    .alert i {
+        width: 40px;
+        text-align: center;
+    }
+    .alert.alert-warning {
+        background: #854D0E;
+        color: white !important;
+        position: relative;
+        margin: auto;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+
+    .alert.alert-warning i {
+        color: #FACC15 !important;
+        font-size: 40px;
+    }
+    .alert.alert-danger {
+        background: #7F1D1D;
+        color: white !important;
+        position: relative;
+        margin: auto;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+
+    .alert.alert-danger i {
+        color: #F87171 !important;
+        font-size: 40px;
+    }
+
+    .alert.alert-success {
+        background: #065F46;
+        color: white !important;
+        position: relative;
+        margin: auto;
+        display: flex;
+        gap: 13px;
+        align-items: center;
+    }
+
+    .alert.alert-success i {
+        color: #34D399 !important;
+        font-size: 40px;
+    }
+    .form-control {
+      background: #2f2925;
+      border: none !important;
+      border-radius: 0.375rem !important;
+      color: white;
+    }
+
+    .form-control::placeholder {
+        color: #57524c;
+    }
+
+    .select2 {
+        background: #2f2925;
+        border: none !important;
+        outline: none !important;
+        box-shadow: none !important;
+        padding: 5px !important;
+        border-radius: 0.375rem !important;
+    }
+
+    span.selection {
+        border: none;
+    }
+    .select2-container--bootstrap4 .select2-selection {
+        border: none !important;
+        padding: 1px 3px !important;
+        color: #57524c;
+    }
+
+    span#select2-selectCategory-container {
+        border: none !important;
+        padding: 1px 3px !important;
+        color: #57524c !important;
+    }
+
+    .select2-container--bootstrap4.select2-container--focus .select2-selection {
+        border: none;
+    }
+
+    .select2-container--bootstrap4 .select2-dropdown {
+        background: #27201d;
+        border: none !important;
+        color: #6f6562 !important;
+        border-radius: 0.375rem !important;
+        margin-top: 2px !important;
+    }
+    .text-primary {
+        color: #86a5ff !important;
+    }
+    
+    .snow-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        width: 100vw;
+        height: 100vh;
+        z-index: 99999;
+        pointer-events: none;
+    }
+
+    .snowflake {
+        position: absolute;
+        background-color: white;
+        border-radius: 50%;
+        opacity: 0.8;
+        pointer-events: none;
+    }
+
+    @keyframes fall {
+        0% {
+            opacity: 0;
+            transform: translateY(0);
+        }
+        10% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.5;
+            transform: translateY(100vh);
+        }
+    }
+
+    @keyframes diagonal-fall {
+        0% {
+            opacity: 0;
+            transform: translate(0, 0);
+        }
+        10% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0.25;
+            transform: translate(10vw, 100vh);
+        }
+    }
+
+    [modal-backdrop] {
+        background: #0000009c !important;
+    }
+
+    button {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+    .table-hover tbody tr:hover {
+        background: transparent !important;
+        color: #938f8a !important;
+    }
+
+    .table-hover tbody tr {
+        color: #938f8a !important;
+    }
+    ::-webkit-scrollbar {
+        margin: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #0d0e0f !important;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #313131 !important;
+    }
+    th {
+        border: none !important;
+    }
+
+    td {
+        border: none !important;
+    }
+    .nav-tabs {
+        border: none !important;
+    }
+    a {
+        color: #89837f;
+    }
+
+    a:hover {
+        color: gray;
+    }
+</style>
+
+<!-- CUSTOM CSS -->
+<style type="text/css">
+	</style>
+
+<!-- ROLE CSS -->
+<style type="text/css">
+            
+              
+              
+              
+              
+              
+              
+              
+              
+              
+              
+      </style>
+<link
+  rel="stylesheet"
+  href="../../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.css"
+/>
+
+<script src="../../cdn.jsdelivr.net/npm/swiper%4011/swiper-bundle.min.js"></script>
+<script src="../../code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script></head>
+<body class="h-full bg-black relative" style="overflow: auto;">
+<style type="text/css">
+      @media all and (min-width: 992px) {
+      .navbar-dark .navbar-nav .nav-item {
+        margin: .375rem .125rem;
+      }
+    }
+  </style>
+    <div class="container my-6 redo-navbar xl:block hidden">
+  <div class="w-full flex gap-4 justify-center">
+                                                <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden bg-blue-500 text-white overflow-hidden" href="../index.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 scale-150 text-blue-900/40 fas fa-home"></i> <span class="relative z-3">Hem</span>
+          </a>
+                                                                      <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../store.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-shopping-cart"></i> <span class="relative z-3">Butik</span>
+          </a>
+                                                        <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../bazaar/survival.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-store"></i> <span class="relative z-3">Pazar</span>
+          </a>
+                                                        <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../help.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-question-circle"></i> <span class="relative z-3">Hjälp</span>
+          </a>
+                                                        <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../leaderboards.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-trophy"></i> <span class="relative z-3">Leaderboards</span>
+          </a>
+                                                                      <a class="group transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../login2c95.html" >
+            <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-life-ring"></i> <span class="relative z-3">Support</span>
+          </a>
+                    <a class="ml-auto transition duration-600 linear py-2 px-2 uppercase font-bold bg-indigo-500 text-white rounded-md hover:bg-indigo-400 hover:text-stone-900 relative overflow-hidden" href="../discord.html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+    </a>
+    <button data-tooltip-target="copytooltip" data-tooltip-placement="bottom" type="button" class="group flex transition duration-600 linear py-2 pr-4 pl-2 uppercase font-bold bg-redo-400 text-gold-800 rounded-md hover:bg-gold-500 hover:text-gold-900 relative overflow-hidden" data-toggle="copyip" data-clipboard-action="copy" data-clipboard-text="play.turkeyx.net">
+      <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 -bottom-2 right-0 text-black/20 fa fa-gamepad mr-1"></i>
+      <span class="bg-gold-900 text-gold-600 rounded-md px-2 mr-1" data-toggle="onlinetext" server-ip="play.turkeyx.net">-/-</span>
+      <span class="relative z-3">play.turkeyx.net</span>
+    </button>
+    <div id="copytooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-black/60 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gold-900/60">
+      Kopiera till urklipp      <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+  </div>
+</div>
+<div class="px-4 flex justify-between gap-2 my-2 xl:hidden block">
+  <button class="relative group mobilbtn">
+    <div class="relative flex overflow-hidden items-center rounded-md justify-center w-[50px] h-[50px] transform transition-all bg-white/20 shadow-none ring-0 duration-200 shadow-md">
+      <div class="flex flex-col justify-between w-[20px] h-[20px] transform transition-all duration-300 origin-center overflow-hidden">
+        <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10"></div>
+        <div class="bg-white h-[2px] w-7 rounded transform transition-all duration-300 group-focus:translate-x-10 delay-75"></div>
+        <div class="bg-white h-[2px] w-7 transform transition-all duration-300 origin-left group-focus:translate-x-10 delay-150"></div>
+
+        <div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+          <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45"></div>
+          <div class="absolute bg-white h-[2px] w-5 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45"></div>
+        </div>
+      </div>
+    </div>
+  </button>
+  <a class="ml-auto transition duration-600 h-fit my-auto linear py-2 px-2 uppercase font-bold bg-indigo-500 text-white rounded-md hover:bg-indigo-400 hover:text-stone-900 relative overflow-hidden" href="../discord.html">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.09 16.09 0 0 0-4.8 0c-.14-.34-.35-.76-.54-1.09c-.01-.02-.04-.03-.07-.03c-1.5.26-2.93.71-4.27 1.33c-.01 0-.02.01-.03.02c-2.72 4.07-3.47 8.03-3.1 11.95c0 .02.01.04.03.05c1.8 1.32 3.53 2.12 5.24 2.65c.03.01.06 0 .07-.02c.4-.55.76-1.13 1.07-1.74c.02-.04 0-.08-.04-.09c-.57-.22-1.11-.48-1.64-.78c-.04-.02-.04-.08-.01-.11c.11-.08.22-.17.33-.25c.02-.02.05-.02.07-.01c3.44 1.57 7.15 1.57 10.55 0c.02-.01.05-.01.07.01c.11.09.22.17.33.26c.04.03.04.09-.01.11c-.52.31-1.07.56-1.64.78c-.04.01-.05.06-.04.09c.32.61.68 1.19 1.07 1.74c.03.01.06.02.09.01c1.72-.53 3.45-1.33 5.25-2.65c.02-.01.03-.03.03-.05c.44-4.53-.73-8.46-3.1-11.95c-.01-.01-.02-.02-.04-.02M8.52 14.91c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.84 2.12-1.89 2.12m6.97 0c-1.03 0-1.89-.95-1.89-2.12s.84-2.12 1.89-2.12c1.06 0 1.9.96 1.89 2.12c0 1.17-.83 2.12-1.89 2.12"/></svg>
+  </a>
+  <button data-tooltip-target="copytooltip" data-tooltip-placement="bottom" type="button" class="group flex h-fit my-auto transition duration-600 linear py-2 pr-4 pl-2 uppercase font-bold bg-redo-400 text-gold-800 rounded-md hover:bg-gold-500 hover:text-gold-900 relative overflow-hidden" data-toggle="copyip" data-clipboard-action="copy" data-clipboard-text="play.turkeyx.net">
+    <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 -bottom-2 right-0 text-black/20 fa fa-gamepad mr-1"></i>
+    <span class="bg-gold-900 text-gold-600 rounded-md px-2 mr-1" data-toggle="onlinetext" server-ip="play.turkeyx.net">-/-</span>
+    <span class="relative z-3">play.turkeyx.net</span>
+  </button>
+  <div id="copytooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-black/60 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gold-900/60">
+    Kopiera till urklipp    <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+</div>
+<!-- Preloader -->
+<main class="main" role="main">
+  <style type="text/css">
+  .news-section {
+    margin-top: 2rem !important;
+  }
+
+  .carousel-inner,
+  .carousel-item img {
+    border-radius: 1rem 1rem 0 0;
+      }
+
+  .server-online-info {
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  </style>
+
+  <section class="mt-12 mb-[6rem]">
+    <div class="container text-center mb-16">
+      <h1 class="w-fit mx-auto flex gap-3 bg-gradient-to-r from-gold-400 via-amber-400 to-orange-400 bg-clip-text text-2xl font-bold text-transparent">
+        <img class="m-auto" src="../apps/main/themes/redoerdorealms/public/assets/img/icons/craftingtable.png"><span class="m-auto text-left">Blogg <p class="text-sm font-normal text-white/40">Sunucudaki son gelişmeler</p></span>
+      </h1>
+      <div class="mt-3 bg-gradient-to-r from-gold-400 via-amber-400 to-orange-400 h-2 w-16 rounded mx-auto"></div>
+    </div>
+    <div class="max-w-4xl mx-auto items-center">
+                                        
+          <a href="../posts/1/turkeyx.html" class="grid lg:grid-cols-2 gap-8 group text-gray-300 hover:text-gray-300 mb-3 min-h-[200px]">
+            <div class="bg-gray-900 h-full rounded-md bg-cover bg-center transition-transform group-hover:scale-[97.5%]" style="background-image: url(../apps/main/public/assets/img/news/e5cc5cef1353dc5c940765f9cde9baf4.png);"></div>
+            <div class="text-left">
+              <div class="font-bold text-white text-xl mb-1">TurkeyX</div>
+              <div class="meta flex items-center text-gray-600 mb-4 text-sm">
+                <div class="!text-black/70 font-bold text-sm rounded-md px-2 bg-red-200">Haberler</div>
+                <div class="px-2">–</div>01.03.2024              </div>
+              <p class="text-md">Çok Yakında!</p>
+            </div>
+          </a>
+                  </div>
+    <div class="col-md-12 d-flex justify-content-center mt-12">
+      <nav class="pages" aria-label="Sayfalar">
+        <ul class="pagination">
+          <li class="page-item disabled">
+            <a class="page-link" href="0.html" tabindex="-1">
+              <i class="fa fa-angle-left"></i>
+            </a>
+          </li>
+                                    <li class="page-item active">
+                <a class="page-link" href="1.html">1</a>
+              </li>
+                                <li class="page-item disabled">
+            <a class="page-link" href="2.html">
+              <i class="fa fa-angle-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+<div id="modalBox"></div>
+
+
+
+            
+<section class="section news-section hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../index.html">Hem</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">Blogg</li>
+                      </ol>
+        </nav>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row">
+                                                                          <div class="col-md-4">
+                <article class="news">
+                  <div class="card">
+                    <div class="img-container">
+                      <a class="img-card" href="../posts/1/turkeyx.html">
+                        <img class="card-img-top lazyload" data-src="/apps/main/public/assets/img/news/e5cc5cef1353dc5c940765f9cde9baf4.png" src="../apps/main/public/assets/img/loaders/news.png" alt="TurkeyX Haber - TurkeyX">
+                      </a>
+                      <div class="img-card-tl">
+                        <a href="../categories/haberler.html">
+                          <span class="theme-color badge badge-pill badge-primary">Haberler</span>
+                        </a>
+                        <a href="../posts/1/turkeyx.html">
+                          <span class="theme-color badge badge-pill badge-primary"><i class="fa fa-eye"></i> 461</span>
+                        </a>
+                        <a href="../posts/1/turkeyx.html">
+                          <span class="theme-color badge badge-pill badge-primary"><i class="fa fa-comments"></i> 0</span>
+                        </a>
+                      </div>
+                      <div class="img-card-tr">
+                        <a href="../posts/1/turkeyx.html">
+                          <span class="theme-color badge badge-pill badge-primary">01.03.2024</span>
+                        </a>
+                      </div>
+                      <div class="img-card-bottom">
+                        <h5 class="mb-0">
+                          <a class="text-white" href="../posts/1/turkeyx.html">
+                            TurkeyX                          </a>
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text" >
+                        Çok Yakında!                      </p>
+                      <a class="theme-color btn btn-primary w-100" href="../posts/1/turkeyx.html">Läs mer</a>
+                    </div>
+                  </div>
+                </article>
+              </div>
+                        <div class="col-md-12 d-flex justify-content-center ">
+              <nav class="pages" aria-label="Sayfalar">
+                <ul class="pagination">
+                  <li class="page-item disabled">
+                    <a class="page-link" href="0.html" tabindex="-1">
+                      <i class="fa fa-angle-left"></i>
+                    </a>
+                  </li>
+                                                            <li class="page-item active">
+                        <a class="page-link" href="1.html">1</a>
+                      </li>
+                                                        <li class="page-item disabled">
+                    <a class="page-link" href="2.html">
+                      <i class="fa fa-angle-right"></i>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+                  </div>
+      </div>
+          </div>
+  </div>
+</section>
+<script>
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+  });
+
+  swiper.on('slideChange', function () {
+    console.log('slide changed');
+  });
+</script></main>
+<div class="fixed grid grid-cols-1 gap-2 left-auto xl:top-[8rem] top-12 xl:right-32 right-5 redo-popups">
+  <a data-tooltip-target="logintooltip" data-tooltip-placement="left" class="bg-blue-500 !text-white p-3 rounded-md loginbtn" href="#!login">
+          <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 22 22"><path fill="currentColor" d="M4 2h14v1h1v1h1v14h-1v1h-1v1H4v-1H3v-1H2V4h1V3h1zm0 14h1v-1h2v-1h8v1h2v1h1V5h-1V4H5v1H4zm12 2v-1h-2v-1H8v1H6v1zM9 5h4v1h1v1h1v4h-1v1h-1v1H9v-1H8v-1H7V7h1V6h1zm3 3V7h-2v1H9v2h1v1h2v-1h1V8z"/></svg>
+      </a>
+  <div id="logintooltip" role="tooltip" class="absolute z-10 invisible w-fit flex px-1 py-2 text-sm font-bold text-white rounded-lg shadow-sm opacity-0 tooltip">
+          Logga in        <div class="tooltip-arrow" data-popper-arrow></div>
+  </div>
+      <a data-tooltip-target="sepettooltip" data-tooltip-placement="left" class="bg-red-600 !text-white p-3 rounded-md cartbtn" href="#!cart">
+      <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" viewBox="0 0 22 22"><path fill="currentColor" d="M19 14v2H6v-1H5v-4H4V8H3V3H1V1h4v3h16v4h-1v3h-1v1H7v2zM5 7h1v3h12V7h1V6H5zm2 10h2v1h1v2H9v1H7v-1H6v-2h1zm8 0h2v1h1v2h-1v1h-2v-1h-1v-2h1z"/></svg>
+    </a>
+    <div id="sepettooltip" role="tooltip" class="absolute z-10 invisible w-fit flex px-1 py-2 text-sm font-bold text-white rounded-lg shadow-sm opacity-0 tooltip">
+      Kundvagn      <div class="tooltip-arrow" data-popper-arrow></div>
+    </div>
+  </div>
+<div class="loginarea z-20 h-full xl:w-[30%] lg:w-[40%] md:w-[70%] sm:w-[80%] w-full !transition-all !duration-[0.5s] !ease-in-out w-full top-0 bottom-0 fixed bg-redogr-900  -right-[100%]">
+  <div class="flex my-auto justify-between p-3 border-b border-white/20">
+    <a class="group transition duration-300 linear text-l text-stone-400 hover:text-stone-300 flex font-bold loginclose my-auto" href="#!">
+      <svg class="my-auto mr-2 transition duration-300 linear group-hover:rotate-[180deg]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path fill="currentColor" d="M84.707 68.752L65.951 49.998l18.75-18.752a1.989 1.989 0 0 0 0-2.813L71.566 15.295a1.99 1.99 0 0 0-2.814 0L49.999 34.047l-18.75-18.752c-.746-.747-2.067-.747-2.814 0L15.297 28.431a1.992 1.992 0 0 0 0 2.814L34.05 49.998L15.294 68.753a1.993 1.993 0 0 0 0 2.814L28.43 84.704a1.988 1.988 0 0 0 2.814 0l18.755-18.755l18.756 18.754c.389.388.896.583 1.407.583s1.019-.195 1.408-.583l13.138-13.137a1.99 1.99 0 0 0-.001-2.814"/></svg>      Kapat
+    </a>
+    <h2 class="text-white/20 text-xl text-center font-bold italic my-auto">Profil</h2>
+  </div>
+        <div class="block my-3 px-4">
+      <div class="my-5">
+          <img class="max-w-[240px] mx-auto" src="../apps/main/public/assets/img/uploads/6252f903fb432b087b0c9fafd0e9c4a91341.png?cache=1713544734" alt="TurkeyX Logo">
+      </div>
+                  <form action="#" method="post">
+        <div class="w-full my-3">
+          <input type="text" class="form-control !bg-white/10 placeholder:text-white/20 !text-white p-4" name="username" placeholder="Användarnamn" value="">
+        </div>
+        <div class="form-group mb-3">
+          <input type="password" class="form-control !bg-white/10 placeholder:text-white/20 !text-white p-4" name="password" placeholder="Lösenord">
+        </div>
+        <div class="form-group custom-control custom-checkbox">
+          <div class="row !text-white/50 text-sm">
+            <div class="col">
+              <input type="checkbox" id="rememberMe" class="custom-control-input before:bg-blue-200" name="rememberMe" checked>
+              <label for="rememberMe" class="custom-control-label before:!bg-green-700 before:!border-none" name="rememberMe">Kom ihåg mig</label>
+            </div>
+            <div class="col-auto">
+              <a class="!text-white/50" href="../recover-account.html">Glömt lösenord?</a>
+            </div>
+          </div>
+        </div>
+                  <div class="form-group d-flex justify-content-center">
+            <div class="g-recaptcha" data-sitekey="6LcnhrYpAAAAAP_NYySUlOZWcs3o-w0ef-sh1TqY" data-theme="dark"></div>          </div>
+                <input type="hidden" name="csrf-token" value="3ac74ea50c83f7d01b30275249a682a07d5a94efc913e4c205faeea859eda888"/>        <button type="submit" class="transition duration-300 linear hover:bg-indigo-950 bg-indigo-900 text-white w-100 p-2 rounded-md font-bold" name="login">Logga in</button>
+      </form>
+
+              <div class="title background before:!border-white/10"><span class="text-white/50 !bg-redogr-900">eller</span></div>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1220799226766819479&amp;redirect_uri=https%3A%2F%2Fturkeyx.net%2Fdiscord%2Flogin&amp;response_type=code&amp;scope=identify+email+guilds+guilds.join" class="btn btn-discord w-100 rounded-md">
+          <svg viewBox="0 -28.5 256 256" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z" fill="#ffffff" fill-rule="nonzero"> </path> </g> </g></svg>
+          <span>Logga in med Discord</span>
+        </a>
+                    <a href="../register.html" class="w-full block bg-sky-100/10 rounded-md mt-2 p-1 !text-white text-center text-sm">
+          Har du inget konto?        </a>
+          </div>
+  </div>
+
+  <div class="cartarea z-20 h-full xl:w-[30%] lg:w-[40%] md:w-[70%] sm:w-[80%] w-full !transition-all !duration-[0.5s] !ease-in-out w-full top-0 bottom-0 fixed bg-redogr-900 h-screen  -right-[100%]">
+    <div class="flex my-auto justify-between p-3 border-b border-white/20">
+      <a class="group transition duration-300 linear text-l text-stone-400 hover:text-stone-300 flex font-bold cartclose my-auto" href="#!">
+        <svg class="my-auto mr-2 transition duration-300 linear group-hover:rotate-[180deg]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path fill="currentColor" d="M84.707 68.752L65.951 49.998l18.75-18.752a1.989 1.989 0 0 0 0-2.813L71.566 15.295a1.99 1.99 0 0 0-2.814 0L49.999 34.047l-18.75-18.752c-.746-.747-2.067-.747-2.814 0L15.297 28.431a1.992 1.992 0 0 0 0 2.814L34.05 49.998L15.294 68.753a1.993 1.993 0 0 0 0 2.814L28.43 84.704a1.988 1.988 0 0 0 2.814 0l18.755-18.755l18.756 18.754c.389.388.896.583 1.407.583s1.019-.195 1.408-.583l13.138-13.137a1.99 1.99 0 0 0-.001-2.814"/></svg>      Kapat
+      </a>
+      <h2 class="text-white/20 text-xl text-center font-bold italic my-auto">Kundvagn</h2>
+    </div>
+    <div class="block my-3 px-4 h-[90vh] overflow-auto">
+            <div id="popshoppingCartTableLoader" class="card-body p-0 popshopping-cart-loading">
+          <div id="popNoLogin" style="display: none;">
+              <div class="mt-3 mx-3">
+                  <div class="alert alert-warning"><i class="fa fa-bell d-none d-md-inline-block"></i> Logga in för att göra detta.</div>              </div>
+          </div>
+          <div class="popshoppingCartSpinner">
+              <div class="spinner-border text-white" role="status">
+                  <span class="sr-only">-/-</span>
+              </div>
+          </div>
+          <div id="popemptyShoppingCart" style="display: none;">
+              <div class="mt-3 mx-3">
+                  <div class="alert alert-warning"><i class="fa fa-bell d-none d-md-inline-block"></i> Din kundvagn är tom!</div>              </div>
+          </div>
+          <div id="popshoppingCart">
+            <div class="overflow-y-auto" id="popcheckoutItems">
+              <div class="block h-fit justify-center cartitemcop mb-4" id="popcheckoutItemCopy" style="display: none;">
+                <div class="flex w-full gap-2 mb-2">
+                  <div class="w-[70px] h-[70px] flex border !border-white/10 p-2 rounded-md">
+                    <img class="m-auto rounded-md popcheckoutItemimg" src="../../senior.redoerdo.com/apps/main/themes/redoerdorealms/public/assets/img/redoerdo.html">
+                  </div>
+                  <div class="h-[70px] w-full border !border-white/10 px-3 py-2 rounded-md">
+                    <div class="block w-full my-auto">
+                      <span class="block w-full text-white text-xl font-bold popcheckoutItemName">-</span>
+                      <div class="font-bold">
+                        <span class="text-white/60 popcheckoutItemTotal">0</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex w-full gap-2">
+                  <div class="w-1/5 flex gap-2">
+                    <button class="bg-transparent border !border-white/10 text-center rounded-md text-white/40 popcheckoutItemButtons w-12 removeItemButton" data-toggle="tooltip" data-placement="top" title="Ta bort" product-id="0">
+                      <svg class="m-auto" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 256 256"><path fill="currentColor" d="M216 48h-36V36a28 28 0 0 0-28-28h-48a28 28 0 0 0-28 28v12H40a12 12 0 0 0 0 24h4v136a20 20 0 0 0 20 20h128a20 20 0 0 0 20-20V72h4a12 12 0 0 0 0-24M100 36a4 4 0 0 1 4-4h48a4 4 0 0 1 4 4v12h-56Zm88 168H68V72h120Zm-72-100v64a12 12 0 0 1-24 0v-64a12 12 0 0 1 24 0m48 0v64a12 12 0 0 1-24 0v-64a12 12 0 0 1 24 0"/></svg>
+                    </button>
+                    <button class="bg-transparent border !border-white/10 text-center rounded-md text-white/40 popcheckoutItemButtons w-12 openBuyModal" product-id="0">
+                        <i class="fa fa-info m-auto"></i>
+                    </button>
+                  </div>
+                  <div class="w-4/5">
+                    <div class="popcheckoutItemQuantity">
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <button class="border !border-white/10 text-white/50 text-2xl mr-1 font-bold w-12 btn cartItemDecreaseButton" type="button" product-id="0">-</button>
+                            </div>
+                            <input type="text" class="form-control mr-1 text-xl font-bold form-control-sm text-center bg-white/5 h-full !rounded-none cartItemAmountUpdateInput" value="0" data-max="0" product-id="0" autocomplete="off">
+                            <div class="checkoutItemQuantitySpinner" style="display: none;">
+                                <div class="spinner-border spinner-border-sm" role="status">
+                                    <span class="sr-only">...</span>
+                                </div>
+                            </div>
+                            <div class="input-group-append">
+                                <button class="border !border-white/10 text-white/50 text-2xl font-bold w-12 btn cartItemIncreaseButton" type="button" product-id="0">+</button>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="flex w-full">
+        <a class="bg-white text-center !text-black font-bold rounded-md w-full uppercase py-3" href="../login7e6c.html">Kassa</a>
+      </div>
+    </div>
+  </div>
+
+<div class="mobilnav z-20 xl:w-[20%] lg:w-[35%] md:w-[60%] sm:w-[80%] block w-full h-full overflow-hidden !transition-all !duration-[0.5s] !ease-in-out w-full top-0 bottom-0 fixed bg-redogr-900 -left-[100%]">
+  <div class="flex my-auto justify-between p-3 border-b border-white/20">
+    <a class="group transition duration-300 linear text-l text-stone-400 hover:text-stone-300 flex font-bold mobilnavclose my-auto" href="#!">
+      <svg class="my-auto mr-2 transition duration-300 linear group-hover:rotate-[180deg]" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 100 100"><path fill="currentColor" d="M84.707 68.752L65.951 49.998l18.75-18.752a1.989 1.989 0 0 0 0-2.813L71.566 15.295a1.99 1.99 0 0 0-2.814 0L49.999 34.047l-18.75-18.752c-.746-.747-2.067-.747-2.814 0L15.297 28.431a1.992 1.992 0 0 0 0 2.814L34.05 49.998L15.294 68.753a1.993 1.993 0 0 0 0 2.814L28.43 84.704a1.988 1.988 0 0 0 2.814 0l18.755-18.755l18.756 18.754c.389.388.896.583 1.407.583s1.019-.195 1.408-.583l13.138-13.137a1.99 1.99 0 0 0-.001-2.814"/></svg>      Kapat
+    </a>
+    <h2 class="text-white/20 text-xl text-center font-bold italic my-auto">play.turkeyx.net</h2>
+  </div>
+  <div class="block my-3 px-4 h-screen overflow-auto">
+    <div class="w-full">
+                                                                <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden bg-blue-500 text-white overflow-hidden" href="../index.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 scale-150 text-blue-900/40 fas fa-home"></i> <span class="relative z-3">Hem</span>
+            </a>
+                                                                                            <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../store.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-shopping-cart"></i> <span class="relative z-3">Butik</span>
+            </a>
+                                                                          <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../bazaar/survival.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-store"></i> <span class="relative z-3">Pazar</span>
+            </a>
+                                                                          <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../help.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-question-circle"></i> <span class="relative z-3">Hjälp</span>
+            </a>
+                                                                          <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../leaderboards.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-trophy"></i> <span class="relative z-3">Leaderboards</span>
+            </a>
+                                                                                            <a class="group block w-full h-fit transition duration-600 linear py-2 px-4 uppercase font-bold bg-blue-50/0 text-blue-50 rounded-md hover:bg-blue-500 hover:text-white relative hover:overflow-hidden " href="../login2c95.html" >
+              <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 linear -bottom-2 right-0 group-hover:text-blue-900/40 text-white/10 fas fa-life-ring"></i> <span class="relative z-3">Support</span>
+            </a>
+                          </div>
+    
+  </div>
+</div>
+
+<div id="openBuyModal"></div>
+<div id="buyModal" tabindex="-1" aria-hidden="true" data-modal-backdropClasses="bg-red-400" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+  <div class="relative p-4 w-full max-w-2xl max-h-full">
+    <div class="relative rounded-lg shadow bg-redogr-900">
+      <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t border-white/10">
+          <h3 class="text-xl font-semibold text-yellow-200" id="buyModalLabel">
+            Butik          </h3>
+          <button type="button" class="text-gray-300 bg-white/10 hover:bg-white/30 hover:text-white rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center modalhide">
+              <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+              </svg>
+              <span class="sr-only">Close modal</span>
+          </button>
+      </div>
+      <div class="buymodalspin mx-auto w-full text-center p-[5rem]">
+          <div class="spinner-border text-white" role="status">
+              <span class="sr-only">-/-</span>
+          </div>
+      </div>
+      <div id="buyModalContent" class="hidden"></div>
+    </div>
+  </div>
+</div>
+<div class="lg:container w-full mt-12 mb-12 mx-auto redo-footer">
+  <div class="relative">
+    <div class="absolute left-5 bottom-0 xl:block hidden">
+      <a href="../help.html">
+        <img class="mx-auto max-h-[220px]"" src="../apps/main/themes/redoerdorealms/public/assets/img/items/Enchanting_Table.webp">
+      </a>
+    </div>
+    <div class="bg-redo-500 w-full rounded-t-md grid grid-cols-5">
+      <div class="col-span-1 xl:block hidden"></div>
+      <div class="xl:col-span-2 col-span-5 flex gap-2 xl:px-0 px-2 xl:!ml-0 md:mx-auto mx-auto">
+        <button data-tooltip-target="fcopytooltip" data-tooltip-placement="bottom" type="button" class="my-2 group w-fit flex transition duration-600 linear py-2 pr-4 pl-2 uppercase font-bold bg-redo-400 text-gold-800 rounded-md hover:bg-gold-500 hover:text-gold-900 relative overflow-hidden" data-toggle="copyip" data-clipboard-action="copy" data-clipboard-text="play.turkeyx.net">
+          <i class="absolute z-1 text-3xl group-hover:scale-150 transition duration-600 -bottom-2 right-0 text-black/20 fa fa-gamepad mr-1"></i>
+          <span class="bg-gold-900 text-gold-600 rounded-md px-2 mr-1" data-toggle="onlinetext" server-ip="play.turkeyx.net">-/-</span>
+          <span class="relative z-3">play.turkeyx.net</span>
+        </button>
+        <div id="fcopytooltip" role="tooltip" class="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white bg-black/60 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gold-900/60">
+            Kopiera till urklipp            <div class="tooltip-arrow" data-popper-arrow></div>
+        </div>
+        <div class="text-sm my-auto xl:flex md:flex hidden">
+                                    <div class="dropdown dropup">
+                <button class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300 dropdown-toggle" type="button" id="languageMenu" data-toggle="dropdown" aria-expanded="false">
+                  Svenska                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageMenu">
+                                      <a class="dropdown-item " href="07b3f.html?lang=cs">
+                      Čeština                    </a>
+                                      <a class="dropdown-item " href="03322.html?lang=de">
+                      Deutsch                    </a>
+                                      <a class="dropdown-item " href="09ed2.html?lang=en">
+                      English                    </a>
+                                      <a class="dropdown-item " href="0c69a.html?lang=es">
+                      Español                    </a>
+                                      <a class="dropdown-item " href="0e68f.html?lang=fr">
+                      Français                    </a>
+                                      <a class="dropdown-item " href="0ef8e.html?lang=hi">
+                      हिन्दी                    </a>
+                                      <a class="dropdown-item " href="0a30c.html?lang=hu">
+                      Magyar                    </a>
+                                      <a class="dropdown-item " href="0cf53.html?lang=it">
+                      Italiano                    </a>
+                                      <a class="dropdown-item " href="0c9e6.html?lang=ja">
+                      日本語                    </a>
+                                      <a class="dropdown-item " href="0cdb1.html?lang=nl">
+                      Nederlands                    </a>
+                                      <a class="dropdown-item " href="099a6.html?lang=no">
+                      Norsk                    </a>
+                                      <a class="dropdown-item " href="06bf8.html?lang=pl">
+                      Polski                    </a>
+                                      <a class="dropdown-item " href="0cc92.html?lang=pt_BR">
+                      Português (Brasil)                    </a>
+                                      <a class="dropdown-item " href="00b5e.html?lang=ro">
+                      Română                    </a>
+                                      <a class="dropdown-item " href="02139.html?lang=ru">
+                      Русский                    </a>
+                                      <a class="dropdown-item active" href="09e93.html?lang=sv">
+                      Svenska                    </a>
+                                      <a class="dropdown-item " href="02296.html?lang=tr">
+                      Türkçe                    </a>
+                                      <a class="dropdown-item " href="0e034.html?lang=vi">
+                      Tiếng Việt                    </a>
+                                      <a class="dropdown-item " href="017d5.html?lang=zh_CN">
+                      中文                    </a>
+                                  </ul>
+              </div>
+            
+                                </div>
+      </div>
+      <div class="xl:col-span-2 md:col-span-3 col-span-5 xl:block hidden my-auto text-right px-4">
+        <div class="flex gap-3 my-auto justify-end">
+                                                                        <a class="text-gold-900 hover:text-gold-700 transition duration-300 linear" href="https://www.instagram.com/turkeyxnw/" rel="external">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M12 2c-2.716 0-3.056.012-4.123.06c-1.064.049-1.791.218-2.427.465a4.901 4.901 0 0 0-1.772 1.153A4.902 4.902 0 0 0 2.525 5.45c-.247.636-.416 1.363-.465 2.427C2.011 8.944 2 9.284 2 12s.011 3.056.06 4.123c.049 1.064.218 1.791.465 2.427a4.903 4.903 0 0 0 1.153 1.772a4.903 4.903 0 0 0 1.772 1.153c.636.247 1.363.416 2.427.465c1.067.048 1.407.06 4.123.06s3.056-.012 4.123-.06c1.064-.049 1.791-.218 2.427-.465a4.902 4.902 0 0 0 1.772-1.153a4.902 4.902 0 0 0 1.153-1.772c.247-.636.416-1.363.465-2.427c.048-1.067.06-1.407.06-4.123s-.012-3.056-.06-4.123c-.049-1.064-.218-1.791-.465-2.427a4.902 4.902 0 0 0-1.153-1.772a4.901 4.901 0 0 0-1.772-1.153c-.636-.247-1.363-.416-2.427-.465C15.056 2.012 14.716 2 12 2m0 1.802c2.67 0 2.986.01 4.04.058c.976.045 1.505.207 1.858.344c.466.182.8.399 1.15.748c.35.35.566.684.748 1.15c.136.353.3.882.344 1.857c.048 1.055.058 1.37.058 4.041c0 2.67-.01 2.986-.058 4.04c-.045.976-.208 1.505-.344 1.858a3.1 3.1 0 0 1-.748 1.15c-.35.35-.684.566-1.15.748c-.353.136-.882.3-1.857.344c-1.054.048-1.37.058-4.041.058c-2.67 0-2.987-.01-4.04-.058c-.976-.045-1.505-.208-1.858-.344a3.098 3.098 0 0 1-1.15-.748a3.098 3.098 0 0 1-.748-1.15c-.137-.353-.3-.882-.344-1.857c-.048-1.055-.058-1.37-.058-4.041c0-2.67.01-2.986.058-4.04c.045-.976.207-1.505.344-1.858c.182-.466.399-.8.748-1.15c.35-.35.684-.566 1.15-.748c.353-.137.882-.3 1.857-.344c1.055-.048 1.37-.058 4.041-.058m0 11.531a3.333 3.333 0 1 1 0-6.666a3.333 3.333 0 0 1 0 6.666m0-8.468a5.135 5.135 0 1 0 0 10.27a5.135 5.135 0 0 0 0-10.27m6.538-.203a1.2 1.2 0 1 1-2.4 0a1.2 1.2 0 0 1 2.4 0"/></svg>
+                  </a>
+                                                                          <a class="text-gold-900 hover:text-gold-700 transition duration-300 linear" href="https://discord.gg/turkeyx" rel="external">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><g fill="none" fill-rule="evenodd"><path d="M24 0v24H0V0zM12.593 23.258l-.011.002l-.071.035l-.02.004l-.014-.004l-.071-.035c-.01-.004-.019-.001-.024.005l-.004.01l-.017.428l.005.02l.01.013l.104.074l.015.004l.012-.004l.104-.074l.012-.016l.004-.017l-.017-.427c-.002-.01-.009-.017-.017-.018m.265-.113l-.013.002l-.185.093l-.01.01l-.003.011l.018.43l.005.012l.008.007l.201.093c.012.004.023 0 .029-.008l.004-.014l-.034-.614c-.003-.012-.01-.02-.02-.022m-.715.002a.023.023 0 0 0-.027.006l-.006.014l-.034.614c0 .012.007.02.017.024l.015-.002l.201-.093l.01-.008l.004-.011l.017-.43l-.003-.012l-.01-.01z"/><path fill="currentColor" d="M15.003 4c.744 0 1.53.26 2.25.547l.527.216c1.26.528 1.968 1.636 2.517 2.853c.891 1.975 1.51 4.608 1.724 6.61c.102.95.127 1.906-.056 2.549c-.197.687-.867 1.173-1.518 1.555l-.322.183l-.334.186c-.172.096-.349.191-.525.284l-.522.27l-.717.357l-.577.284a1 1 0 1 1-.894-1.788l.79-.39l-.58-.609c-1.39.57-3.027.893-4.766.893c-1.739 0-3.376-.322-4.766-.893l-.58.608l.793.39a1 1 0 1 1-.894 1.79l-.544-.27c-.402-.2-.805-.398-1.203-.607l-.928-.505l-.321-.183c-.651-.382-1.322-.868-1.518-1.555c-.184-.643-.158-1.598-.057-2.55c.214-2.001.833-4.634 1.724-6.609c.549-1.217 1.257-2.325 2.517-2.853C7.059 4.413 8.072 4 9 4c.603 0 1.077.555.99 1.147A13.65 13.65 0 0 1 12 5c.691 0 1.366.05 2.014.148A1.012 1.012 0 0 1 15.004 4M8.75 10.5a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5m6.5 0a1.75 1.75 0 1 0 0 3.5a1.75 1.75 0 0 0 0-3.5"/></g></svg>
+                  </a>
+                                  </div>
+      </div>
+    </div>
+    <div class="bg-yellow-400 w-full pt-4 pb-2 rounded-b-md grid grid-cols-5 gap-2">
+      <div class="col-span-1 xl:block hidden"></div>
+      <div class="xl:col-span-2 col-span-5 xl:px-0 px-2 my-auto xl:!text-left md:text-center text-center">
+        <h5 class="text-gold-800 mb-1 font-bold">TurkeyX - Her zaman en iyisi için!</h5>
+        <p class="mb-2 text-gold-950 text-sm">
+                      Her zaman en iyisi için!                  </p>
+      </div>
+      <div class="xl:col-span-2 col-span-5 xl:!text-left md:text-center text-center mx-auto">
+        <h5 class="text-gold-800 mb-3 font-bold">Snabbmeny</h5>
+        <div class="xl:flex grid grid-cols-1 gap-4 text-sm mb-2">
+          <li class="mb-2">
+            <a class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300" href="../index.html">Hem</a>
+          </li>
+                      <li class="mb-2">
+              <a class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300" href="../store.html">Butik</a>
+            </li>
+                                <li class="mb-2">
+              <a class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300" href="../login.html">Logga in</a>
+            </li>
+                          <li class="mb-2">
+                <a class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300" href="../register.html">Registrera</a>
+              </li>
+                              </div>
+        <div class="text-sm my-auto xl:hidden lg:hidden md:hidden grid gap-2">
+                                    <div class="dropdown dropup">
+                <button class="bg-gold-950/20 transition duration-300 linear text-gold-900 py-2 px-3 rounded-md font-bold hover:bg-gold-800 hover:text-gold-300 dropdown-toggle" type="button" id="languageMenu" data-toggle="dropdown" aria-expanded="false">
+                  Svenska                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageMenu">
+                                      <a class="dropdown-item " href="07b3f.html?lang=cs">
+                      Čeština                    </a>
+                                      <a class="dropdown-item " href="03322.html?lang=de">
+                      Deutsch                    </a>
+                                      <a class="dropdown-item " href="09ed2.html?lang=en">
+                      English                    </a>
+                                      <a class="dropdown-item " href="0c69a.html?lang=es">
+                      Español                    </a>
+                                      <a class="dropdown-item " href="0e68f.html?lang=fr">
+                      Français                    </a>
+                                      <a class="dropdown-item " href="0ef8e.html?lang=hi">
+                      हिन्दी                    </a>
+                                      <a class="dropdown-item " href="0a30c.html?lang=hu">
+                      Magyar                    </a>
+                                      <a class="dropdown-item " href="0cf53.html?lang=it">
+                      Italiano                    </a>
+                                      <a class="dropdown-item " href="0c9e6.html?lang=ja">
+                      日本語                    </a>
+                                      <a class="dropdown-item " href="0cdb1.html?lang=nl">
+                      Nederlands                    </a>
+                                      <a class="dropdown-item " href="099a6.html?lang=no">
+                      Norsk                    </a>
+                                      <a class="dropdown-item " href="06bf8.html?lang=pl">
+                      Polski                    </a>
+                                      <a class="dropdown-item " href="0cc92.html?lang=pt_BR">
+                      Português (Brasil)                    </a>
+                                      <a class="dropdown-item " href="00b5e.html?lang=ro">
+                      Română                    </a>
+                                      <a class="dropdown-item " href="02139.html?lang=ru">
+                      Русский                    </a>
+                                      <a class="dropdown-item active" href="09e93.html?lang=sv">
+                      Svenska                    </a>
+                                      <a class="dropdown-item " href="02296.html?lang=tr">
+                      Türkçe                    </a>
+                                      <a class="dropdown-item " href="0e034.html?lang=vi">
+                      Tiếng Việt                    </a>
+                                      <a class="dropdown-item " href="017d5.html?lang=zh_CN">
+                      中文                    </a>
+                                  </ul>
+              </div>
+            
+                                </div>
+      </div>
+      <div class="col-span-5 text-center mt-4 text-gold-900 text-xs">
+          Powered by
+          <copyright>
+            <a class="text-gold-900 font-bold hover:text-gold-950" href="https://www.leaderos.net/" rel="external">
+              LEADEROS
+            </a>
+          </copyright>
+          &
+          <a class="text-gold-900 font-bold hover:text-gold-950" href="https://redoerdo.com/"> Redoerdo</a>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="footer hidden">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-5 mb-md-0">
+          <h5 class="footer-title">Om</h5>
+          <p class="mb-0">
+                          Her zaman en iyisi için!                      </p>
+          
+          <div class="d-flex mt-4">
+                                      <div class="dropdown dropup">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="languageMenu" data-toggle="dropdown" aria-expanded="false">
+                  Svenska                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageMenu">
+                                      <a class="dropdown-item " href="07b3f.html?lang=cs">
+                      Čeština                    </a>
+                                      <a class="dropdown-item " href="03322.html?lang=de">
+                      Deutsch                    </a>
+                                      <a class="dropdown-item " href="09ed2.html?lang=en">
+                      English                    </a>
+                                      <a class="dropdown-item " href="0c69a.html?lang=es">
+                      Español                    </a>
+                                      <a class="dropdown-item " href="0e68f.html?lang=fr">
+                      Français                    </a>
+                                      <a class="dropdown-item " href="0ef8e.html?lang=hi">
+                      हिन्दी                    </a>
+                                      <a class="dropdown-item " href="0a30c.html?lang=hu">
+                      Magyar                    </a>
+                                      <a class="dropdown-item " href="0cf53.html?lang=it">
+                      Italiano                    </a>
+                                      <a class="dropdown-item " href="0c9e6.html?lang=ja">
+                      日本語                    </a>
+                                      <a class="dropdown-item " href="0cdb1.html?lang=nl">
+                      Nederlands                    </a>
+                                      <a class="dropdown-item " href="099a6.html?lang=no">
+                      Norsk                    </a>
+                                      <a class="dropdown-item " href="06bf8.html?lang=pl">
+                      Polski                    </a>
+                                      <a class="dropdown-item " href="0cc92.html?lang=pt_BR">
+                      Português (Brasil)                    </a>
+                                      <a class="dropdown-item " href="00b5e.html?lang=ro">
+                      Română                    </a>
+                                      <a class="dropdown-item " href="02139.html?lang=ru">
+                      Русский                    </a>
+                                      <a class="dropdown-item active" href="09e93.html?lang=sv">
+                      Svenska                    </a>
+                                      <a class="dropdown-item " href="02296.html?lang=tr">
+                      Türkçe                    </a>
+                                      <a class="dropdown-item " href="0e034.html?lang=vi">
+                      Tiếng Việt                    </a>
+                                      <a class="dropdown-item " href="017d5.html?lang=zh_CN">
+                      中文                    </a>
+                                  </ul>
+              </div>
+            
+                                  </div>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Snabbmeny</h5>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <a href="../index.html">Hem</a>
+            </li>
+                          <li class="mb-2">
+                <a href="../store.html">Butik</a>
+              </li>
+                                      <li class="mb-2">
+                <a href="../login.html">Logga in</a>
+              </li>
+                              <li class="mb-2">
+                  <a href="../register.html">Registrera</a>
+                </li>
+                                    </ul>
+        </div>
+        <div class="col-6 col-md-2">
+          <h5 class="footer-title">Sociala medier</h5>
+          <ul class="list-unstyled mb-0">
+                                                                      <li class="mb-2">
+                  <a href="https://www.instagram.com/turkeyxnw/" rel="external">
+                    <i class="fab fa-instagram text-white mr-1"></i> Instagram
+                  </a>
+                </li>
+                                                                        <li class="mb-2">
+                  <a href="https://discord.gg/turkeyx" rel="external">
+                    <i class="fab fa-discord text-white mr-1"></i> Discord
+                  </a>
+                </li>
+                                    </ul>
+        </div>
+        <div class="col-md-3 mt-5 mt-md-0">
+          <h5 class="footer-title">Kontakt</h5>
+          <ul class="list-unstyled mb-0">
+                          <li>Du kan redigera kontaktuppgifter från Dashboard.</li>
+                      </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md text-center text-md-left mb-2 mb-md-0">
+          Alla rättigheter förbehållna. &copy; 2024        </div>
+        <div class="col-12 col-md-auto text-center text-md-left">
+          Powered by
+          <copyright>
+            <a href="https://www.leaderos.net/" rel="external">
+              LEADEROS
+            </a>
+          </copyright>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.0/flowbite.min.js"></script><script>
+  var lang = {
+    credits: "%credit% kredit(er)",
+    search: "Sök...",
+    loading: "Laddar...",
+    confirm_delete: "Är du säker på att du vill radera?",
+    player_not_found: "Spelaren hittades inte!",
+    play_again: "Spela igen",
+    spinning: "Snurrar...",
+    apply: "Använd",
+    remove: "Ta bort",
+    alert_btn_ok: "OK",
+    alert_btn_cancel: "Avbryt",
+    alert_btn_confirm: "Bekräfta",
+    alert_btn_buy_credit: "Köp krediter",
+    alert_title_success: "Lyckades!",
+    alert_title_error: "Fel!",
+    alert_title_warning: "Varning!",
+    alert_title_you_lost: "Du förlorade!",
+    alert_title_you_win: "Du vann!",
+    alert_message_server_address_copied: "Serveradress kopierad till urklipp!",
+    alert_message_something_went_wrong: "Något gick fel! Försök igen senare.",
+    alert_message_lottery_error_duration: "Du måste vänta tills %date% för att snurra igen gratis.",
+    alert_message_lottery_you_lost: "Tyvärr, du förlorade! Försök igen nästa gång.",
+    alert_message_lottery_you_win: "Grattis! Du vann <strong>%prize%</strong>!",
+    alert_message_lottery_you_win_chest: "Produkten har lagts till i din kista.",
+    alert_message_lottery_you_win_credit: "Nuvarande kredit: %credit%",
+    alert_message_lottery_credit_error: "Du har inte tillräckligt med kredit för att spela spelet.",
+    alert_message_chest_confirm: "Se till att du är på servern innan du bekräftar, annars kan produkten inte nå dig!",
+    alert_message_chest_sending: "Leverans pågår, vänta och lämna inte sidan...",
+    alert_message_chest_sent: "Produkten har levererats! Ha kul!",
+    alert_message_chest_server_error: "Det uppstod ett problem med att ansluta till servern! Försök igen senare.",
+    alert_message_chest_amount_error: "Du kan ta emot en maximal mängd av %amount%!",
+    alert_message_login: "Logga in för att göra detta.",
+    help_voting_success: "Du har röstat!",
+    alert_message_checkout_credit_error: "Du har inte tillräckligt med kredit.",
+    alert_message_checkout_success: "Ditt köp har slutförts och lagts till i din kista.",
+    alert_message_checkout_quantity_error: "Ange en giltig kvantitet!",
+    alert_message_checkout_stock_error: "Lagerskiktet har uppnåtts för denna produkt!",
+    alert_message_checkout_stock_error2: "Inte tillräckligt med föremål i lager!",
+    alert_message_checkout_cart_empty_error: "Din kundvagn är tom!",
+    alert_message_checkout_coupon_invalid: "Kupongen är ogiltig!",
+    alert_message_checkout_coupon_invalid_for_cart: "Denna kupong är inte giltig för din kundvagn!",
+    alert_message_checkout_coupon_used: "Du har använt denna kupong tidigare!",
+    alert_message_checkout_coupon_expired: "Denna kupong har gått ut!",
+    alert_message_checkout_coupon_login: "Du måste vara inloggad för att använda kuponger!",
+    alert_message_checkout_coupon_success: "Kupongen har lagts till!",
+    alert_message_checkout_coupon_price: "Du måste ha minst %amount% krediter på ditt konto för att använda denna kupong!",
+    alert_message_not_found: "Not found!",
+    limited_stock: "Begränsat lager!",
+    out_of_stock: "Slut på Lagret!"
+  }
+</script><script>
+  var themePath = '/apps/main/themes/redoerdorealms';
+  var langCode = 'sv';
+  var currency = 'TRY';
+  var currencySymbol = '₺';
+  var currencyRate = 1.0000000000;
+</script>
+
+  <script type="text/javascript" src="../../www.termsfeed.com/public/cookie-consent/4.0.0/cookie-consent.js" charset="UTF-8"></script>
+  <script type="text/javascript" charset="UTF-8">
+    document.addEventListener('DOMContentLoaded', function () {
+      cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"sv","page_load_consent_levels":["strictly-necessary", "functionality", "tracking", "targeting"],"notice_banner_reject_button_hide":true,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"TurkeyX","website_privacy_policy_url":"https://turkeyx.net/privacy"});
+    });
+  </script>
+
+<div class="snow-container hidden"></div>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+      const snowContainer = document.querySelector(".snow-container");
+
+      const particlesPerThousandPixels = 0.1;
+      const fallSpeed = 1.25;
+      const pauseWhenNotActive = true;
+      const maxSnowflakes = 200;
+      const snowflakes = [];
+
+      let snowflakeInterval;
+      let isTabActive = true;
+
+      function resetSnowflake(snowflake) {
+          const size = Math.random() * 5 + 1;
+          const viewportWidth = window.innerWidth - size;
+          const viewportHeight = window.innerHeight;
+
+          snowflake.style.width = `${size}px`;
+          snowflake.style.height = `${size}px`;
+          snowflake.style.left = `${Math.random() * viewportWidth}px`;
+          snowflake.style.top = `-${size}px`;
+
+          const animationDuration = (Math.random() * 3 + 2) / fallSpeed;
+          snowflake.style.animationDuration = `${animationDuration}s`;
+          snowflake.style.animationTimingFunction = "linear";
+          snowflake.style.animationName =
+              Math.random() < 0.5 ? "fall" : "diagonal-fall";
+
+          setTimeout(() => {
+              if (parseInt(snowflake.style.top, 10) < viewportHeight) {
+                  resetSnowflake(snowflake);
+              } else {
+                  snowflake.remove();
+              }
+          }, animationDuration * 1000);
+      }
+
+      function createSnowflake() {
+          if (snowflakes.length < maxSnowflakes) {
+              const snowflake = document.createElement("div");
+              snowflake.classList.add("snowflake");
+              snowflakes.push(snowflake);
+              snowContainer.appendChild(snowflake);
+              resetSnowflake(snowflake);
+          }
+      }
+
+      function generateSnowflakes() {
+          const numberOfParticles =
+              Math.ceil((window.innerWidth * window.innerHeight) / 1000) *
+              particlesPerThousandPixels;
+          const interval = 5000 / numberOfParticles;
+
+          clearInterval(snowflakeInterval);
+          snowflakeInterval = setInterval(() => {
+              if (isTabActive && snowflakes.length < maxSnowflakes) {
+                  requestAnimationFrame(createSnowflake);
+              }
+          }, interval);
+      }
+
+      function handleVisibilityChange() {
+          if (!pauseWhenNotActive) return;
+
+          isTabActive = !document.hidden;
+          if (isTabActive) {
+              generateSnowflakes();
+          } else {
+              clearInterval(snowflakeInterval);
+          }
+      }
+
+      generateSnowflakes();
+
+      window.addEventListener("resize", () => {
+          clearInterval(snowflakeInterval);
+          setTimeout(generateSnowflakes, 1000);
+      });
+
+      document.addEventListener("visibilitychange", handleVisibilityChange);
+  });
+</script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/scrollup/2.4.1/jquery.scrollUp.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/vanilla-lazyload/16.1.0/lazyload.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/i18n/tr.min.js"></script>
+<script src="../../cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<script src="../apps/main/themes/redoerdorealms/public/assets/js/store7b1b.js?v=558"></script>
+  <script src="../../cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js"></script>
+<script src="../../www.google.com/recaptcha/apid135.js?hl=sv?v=558" async defer></script><script>
+  $(".loginbtn").click( function() {
+    $(".loginarea").addClass("right-0");
+    $(".loginarea").removeClass("-right-[100%]");
+  }
+  );
+  $(".loginclose").click( function() {
+    $(".loginarea").addClass("-right-[100%]");
+    $(".loginarea").removeClass("right-0");
+  }
+  );
+
+  $(".cartbtn").click( function() {
+    $(".cartarea").addClass("right-0");
+    $(".cartarea").removeClass("-right-[100%]");
+    popcartupdate();
+  }
+  );
+  $(".cartclose").click( function() {
+    $(".cartarea").addClass("-right-[100%]");
+    $(".cartarea").removeClass("right-0");
+  }
+  );
+
+  $(".mobilbtn").click( function() {
+    $(".mobilnav").addClass("left-0");
+    $(".mobilnav").removeClass("-left-[100%]");
+    popcartupdate();
+  }
+  );
+  $(".mobilnavclose").click( function() {
+    $(".mobilnav").addClass("-left-[100%]");
+    $(".mobilnav").removeClass("left-0");
+  }
+  );
+</script>
+<script>
+  $(".modalhide").on("click", function() {
+    const $targetEl = document.getElementById('buyModal');
+    const options = {
+        closable: false,
+    };
+    const modal = new Modal($targetEl,options);
+    modal.hide();
+  });
+</script>
+  <script>
+    var buyModal = $("#buyModal");
+    var pcheckoutItemCopy = $("#popcheckoutItemCopy");
+    var pemptyShoppingCart = $("#popemptyShoppingCart");
+    var popNoLogin = $("#popNoLogin");
+
+    function popcartupdate() {
+      $.ajax({
+        type: "POST",
+        url: "/apps/main/public/ajax/shopping-cart.php",
+        success: function(result) {
+          if (result == "error_login") {
+            popNoLogin.css("display", "block");
+            $(".popshoppingCartSpinner").css("display", "none");
+          }
+          else {
+            $("div.pcartitem").remove();
+            var data = JSON.parse(result);
+            $(".ptotalprice").text(data.total);
+            $(".pshopping-cart-count").text(data.items.length);
+            if (data.items != null && data.items.length > 0) {
+              for (var i = 0; i < data.items.length; i++) {
+                var pprice = (data.items[i].rawDiscountedPrice == 0) ? data.items[i].price : data.items[i].discountedPrice;
+                var pitem = pcheckoutItemCopy.clone().appendTo("#popcheckoutItems");
+                pitem.find(".popcheckoutItemName").text(data.items[i].name);
+                pitem.find(".popcheckoutItemTotal").text(data.items[i].total);
+                pitem.find(".popcheckoutItemimg").attr("src", data.items[i].image);
+                pitem.find(".popcheckoutItemQuantity input").val(data.items[i].quantity);
+                pitem.find(".popcheckoutItemButtons.openBuyModal").attr("product-id", data.items[i].id);
+                pitem.find(".popcheckoutItemButtons.removeItemButton").attr("product-id", data.items[i].id);
+                pitem.find(".popcheckoutItemQuantity .cartItemAmountUpdateInput").attr("product-id", data.items[i].id);
+                pitem.find(".popcheckoutItemQuantity .cartItemDecreaseButton").attr("product-id", data.items[i].id);
+                pitem.find(".popcheckoutItemQuantity .cartItemIncreaseButton").attr("product-id", data.items[i].id);
+                pitem.find(".popcheckoutItemQuantity input").attr("data-max", data.items[i].stock);
+                pitem.css("display", "block");
+                pitem.addClass("pcartitem");
+
+                if (data.items[i].isSubscription) {
+                  pitem.find(".popcheckoutItemQuantity .popcartItemIncreaseButton").prop("disabled", true);
+                }
+              }
+            }
+
+            $("#popshoppingCartTableLoader").removeClass("popshopping-cart-loading");
+            $(".popshoppingCartSpinner").css("display", "none");
+
+            if (data.items.length == 0) {
+              $("#popshoppingCart").css("display", "none");
+              pemptyShoppingCart.css("display", "block");
+            }
+            else {
+              $("#popshoppingCart").css("display", "block");
+            }
+            openBuyModal("#popshoppingCart .openBuyModal");
+            removeItem();
+            initUpdateCartItem();
+          }
+        }
+      });
+    }
+
+    function removeItem() {
+      var removeItemButton = $(".removeItemButton");
+
+      removeItemButton.on("click", function() {
+        var productID = $(this).attr("product-id");
+        var item = $(this).parents("#popcheckoutItemCopy");
+        $.ajax({
+          type: "GET",
+          url: "/apps/main/public/ajax/shopping-cart.php?action=remove&productID=" + productID,
+          success: function(result) {
+            var data = JSON.parse(result);
+            if (data.items.length == 0) {
+              $("#popcheckoutItems").css("display", "none");
+              pemptyShoppingCart.css("display", "block");
+            }
+            $(".pshopping-cart-count").text(data.items.length);
+            $(".ptotalprice").text(data.total);
+            item.remove();
+          }
+        });
+      });
+    }
+
+    function initUpdateCartItem() {
+      var cartItemDecreaseButton = $(".cartItemDecreaseButton");
+      var cartItemIncreaseButton = $(".cartItemIncreaseButton");
+      var cartItemAmountUpdateInput = $(".cartItemAmountUpdateInput");
+
+      cartItemAmountUpdateInput.on("input", function(event) {
+        var cartItemQuantity = $(this);
+        var cartItemQuantitySpinner = $(".popshoppingCartSpinner");
+        var cartItemQuantityButtons = $(this).parents(".popcheckoutItemQuantity").find(".btn");
+        var cartItemTotal = $(this).parents("#popcheckoutItemCopy").find(".popcheckoutItemTotal");
+        var cartItemPrice = $(this).find(".popcheckoutItemPrice");
+        var cartItemQuantityValue = parseInt(cartItemQuantity.val());
+        var cartItemQuantityMaxValue = parseInt(cartItemQuantity.attr("data-max"));
+        var productID = cartItemQuantity.attr("product-id");
+        if (cartItemQuantityValue > 0) {
+          if (cartItemQuantityMaxValue >= cartItemQuantityValue || cartItemQuantityMaxValue === -1) {
+            cartItemQuantity.css("display", "none");
+            cartItemQuantitySpinner.css("display", "block");
+            cartItemQuantityButtons.css("pointer-events", "none");
+
+            $.ajax({
+              type: "GET",
+              url: "/apps/main/public/ajax/shopping-cart.php?action=update&productID=" + productID + "&quantity=" + cartItemQuantityValue,
+              success: function(result) {
+                if (result == "error_product") {
+                  swal.fire({
+                    title: lang.alert_title_error,
+                    text: lang.alert_message_not_found,
+                    type: "error",
+                    confirmButtonColor: "#02b875",
+                    confirmButtonText: lang.alert_btn_ok
+                  });
+                }
+                else if (result == "error_value") {
+                  swal.fire({
+                    title: lang.alert_title_error,
+                    text: lang.alert_message_checkout_quantity_error,
+                    type: "error",
+                    confirmButtonColor: "#02b875",
+                    confirmButtonText: lang.alert_btn_ok
+                  });
+                }
+                else if (result == "error_stock") {
+                  swal.fire({
+                    title: lang.alert_title_error,
+                    text: lang.lang.alert_message_checkout_stock_error2,
+                    type: "error",
+                    confirmButtonColor: "#02b875",
+                    confirmButtonText: lang.alert_btn_ok
+                  });
+                }
+                else {
+                  var data = JSON.parse(result);
+                  var itemIndex = data.items.findIndex((item) => item.id === productID);
+                  if (itemIndex > -1) {
+                    cartItemTotal.text(data.items[itemIndex].total);
+                  }
+                  $(".ptotalprice").text(data.total);
+                }
+              },
+              complete: function() {
+                cartItemQuantity.css("display", "block");
+                cartItemQuantitySpinner.css("display", "none");
+                cartItemQuantityButtons.css("pointer-events", "auto");
+              }
+            });
+          }
+          else {
+            swal.fire({
+              title: lang.alert_title_error,
+              text: lang.lang.alert_message_checkout_stock_error2,
+              type: "error",
+              confirmButtonColor: "#02b875",
+              confirmButtonText: lang.alert_btn_ok
+            });
+            event.preventDefault();
+          }
+        }
+        else {
+          event.preventDefault();
+        }
+      });
+
+      cartItemDecreaseButton.on("click", function() {
+        var cartItemQuantity = $(this).parents(".popcheckoutItemQuantity").find("input");
+        var cartItemQuantityValue = parseInt(cartItemQuantity.val());
+        if (cartItemQuantityValue > 1) {
+          cartItemQuantity.val(cartItemQuantityValue - 1).trigger('input');
+        }
+      });
+
+      cartItemIncreaseButton.on("click", function() {
+        var cartItemQuantity = $(this).parents(".popcheckoutItemQuantity").find("input");
+        var cartItemQuantityValue = parseInt(cartItemQuantity.val());
+        var cartItemQuantityMaxValue = parseInt(cartItemQuantity.attr("data-max"));
+        var cartItemQuantityNewValue = cartItemQuantityValue + 1;
+        if (cartItemQuantityMaxValue >= cartItemQuantityNewValue || cartItemQuantityMaxValue === -1) {
+          cartItemQuantity.val(cartItemQuantityNewValue).trigger('input');
+        }
+        else {
+          swal.fire({
+            title: lang.alert_title_error,
+            text: lang.alert_message_checkout_stock_error,
+            type: "error",
+            confirmButtonColor: "#02b875",
+            confirmButtonText: lang.alert_btn_ok
+          });
+        }
+      });
+    }
+
+  </script>
+<script type="text/javascript">
+  var $onlineAPI = 1;
+  var $preloaderStatus = 'false';
+</script>
+<script src="../apps/main/themes/redoerdorealms/public/assets/js/main.min7b1b.js?v=558"></script>
+
+
+</body>
+
+<!-- Mirrored from turkeyx.net/blog/0?lang=sv by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 30 May 2024 14:09:14 GMT -->
+</html>
+      
